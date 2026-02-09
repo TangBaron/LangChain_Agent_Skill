@@ -1,0 +1,27 @@
+# Skill System 配置文件示例
+
+# 基础路径配置
+skills_dir: "./skills"  # Skills 目录路径
+
+# 状态管理配置
+state_mode: "replace"  
+
+# 日志配置
+verbose: true  # 是否启用详细日志
+log_level: "INFO"  # DEBUG | INFO | WARNING | ERROR | CRITICAL
+
+# Agent 配置
+default_model: "deepseek-chat"  # 默认 LLM 模型
+temperature: 0.7  # 温度参数
+max_tokens: null  # 最大 token 数（null 表示不限制）
+
+# 中间件配置
+middleware_enabled: true  # 是否启用中间件
+
+# Skill 发现配置
+auto_discover: true  # 是否自动发现 Skills
+skill_module_name: "skill"  # Skill 模块文件名（默认 skill.py）
+
+# 自定义配置（可选）
+custom_config: {}
+  # your_key: your_value
